@@ -1,0 +1,17 @@
+Úloha 1.
+Navrhni entito-relačný model databázy pre systém, v ktorom môže
+
+administrátor spoločnosti vytvárať a pridelovať školenia,
+
+ktorých je autor, svojím zamestnancom. Administrátori aj zamestnanci nech
+sú evidovaný v spoločnej tabuľke. Spoločnosť môže mať viac
+ako jedného administrátora a zamestnanec môže byť naraz zamestnancom
+vo viacero spoločnostiach. Po každom preštudovaní školenia musí byť
+pre zamestnanca evidované, že absolvoval toto školenie a získal z
+neho certifikát v spoločnosti, u ktorej ho ma pridelené.
+
+
+
+
+
+
