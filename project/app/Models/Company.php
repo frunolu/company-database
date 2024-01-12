@@ -1,6 +1,7 @@
 <?php
+declare(strict_types=1);
 
-// app/Models/Company.php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
