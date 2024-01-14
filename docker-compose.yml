@@ -5,7 +5,7 @@ services:
   php:
     build: ./docker/php
     volumes:
-      - ./project1:/project1
+      - ./project:/project
       - ./config/php.ini:/usr/local/etc/php/conf.d/custom-php.ini
 
     depends_on:
@@ -42,7 +42,7 @@ services:
     depends_on:
       - php
     volumes:
-      - ./project1:/project1
+      - ./project:/project
       - ./config/nginx.conf:/etc/nginx/conf.d/default.conf
     ports:
       - '90:80'

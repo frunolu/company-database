@@ -1,4 +1,4 @@
 .idea
 data/db/*
 !.gitkeep
-project1/vendor/
+project/vendor/

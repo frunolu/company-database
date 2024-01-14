@@ -9,7 +9,7 @@ alebo upravíme podla potreby docker-compose.yml)
 ak všetko prebehne v poriadku, tak sa v termináli zobrazí nasledovné:
 
 ```bash
-make start-project1
+make start-project
 docker-compose up -d --build --force-recreate --remove-orphans
 Building php
 Recreating company-database_db_1 ... done
@@ -48,7 +48,7 @@ It is necessary to have the ports `90`, `8080`, and `3306` available (if they ar
 If everything goes well, the following output will be displayed in the terminal:
 
 ```bash
-make start-project1
+make start-project
 docker-compose up -d --build --force-recreate --remove-orphans
 Building php
 Recreating company-database_db_1 ... done
