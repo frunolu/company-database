@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
 
@@ -12,15 +12,11 @@ services:
       - db
 
   db:
-    image: mariadb:10.3.30-focal
-    restart: always
+    image: mysql
     environment:
       MYSQL_DATABASE: company
       MYSQL_ROOT_PASSWORD: toor
       TZ: Europe/Prague
-    volumes:
-      - ./config/mysql.cnf:/etc/mysql/conf.d/local.cnf
-      - ./data/db:/var/lib/mysql
     ports:
       - '3307:3306'
 
