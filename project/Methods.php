@@ -1,6 +1,9 @@
 <?php
 
 
+use App\Models\Course;
+use App\Models\Person;
+
 class Methods
 {
 
@@ -56,7 +59,7 @@ class Methods
         $author_courses = $courses->where('author', $user_id);
 
         $phpCertificates = $courses->filter(function ($course) {
-            return strpos($course->certificate, 'php') !== false;
+            return str_contains ($course->certificate, 'php');
         })->pluck('certificate')->toArray();
 
         $all_certificates = $courses->pluck('certificate')->toArray();
